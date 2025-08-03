@@ -4,7 +4,7 @@
   justify-content: space-between;
   margin: 16px auto 40px auto;
   width: 400px;
-  padding: 0 32px;
+  padding: 0 16px;
 
   > a {
     display: flex;
@@ -36,6 +36,7 @@
   width: 100%;
   height: 100%;
   background: rgba(15, 15, 15, 0.83);
+  z-index: 49;
 }
 
 .bottom-menu {
