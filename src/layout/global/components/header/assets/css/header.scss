@@ -137,13 +137,13 @@
 
     > ul {
       display: flex;
-      gap: 8px;
+      gap: 12px;
       padding: 0;
       margin: 0;
       list-style: none;
 
       > li {
-        > svg {
+        svg {
           width: 20px;
           height: 20px;
         }
