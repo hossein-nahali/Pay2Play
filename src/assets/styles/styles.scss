@@ -1,0 +1,149 @@
+@import "fonts";
+
+
+* {
+  font-feature-settings: "ss01";
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: "Yekan Bakh", serif;
+  -moz-user-select: none;
+  user-select: none;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  min-height: 100dvh;
+  background-color: #0A0A0A;
+  color: #F0FDF4;
+
+  #root {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  label {
+    font-weight: 500;
+    font-size: 14px;
+    color: #D4D4D4;
+    margin-bottom: 8px;
+  }
+
+  input[type="text"] {
+    background: #151515;
+    border: 1px solid #404040;
+    border-radius: 12px;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    color: #D4D4D4;
+    outline: none;
+    width: 100%;
+    flex: 1;
+    font-weight: 500;
+    font-size: 14px;
+    height: 43px;
+
+    &.center {
+      text-align: center;
+      justify-content: center;
+    }
+
+    &::placeholder {
+      font-weight: 500;
+      font-size: 14px;
+      color: #737373;
+      position: relative;
+      transform: translateY(-1px);
+    }
+  }
+
+  input[type="number"] {
+    background: #151515;
+    border: 1px solid #404040;
+    border-radius: 12px;
+    padding: 0 12px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    color: #D4D4D4;
+    outline: none;
+    width: 100%;
+    flex: 1;
+    font-weight: 500;
+    font-size: 14px;
+
+    &.center {
+      text-align: center;
+      justify-content: center;
+    }
+
+    &::placeholder {
+      font-weight: 500;
+      font-size: 14px;
+      color: #737373;
+      position: relative;
+      transform: translateY(-1px);
+    }
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    // Firefox
+    -moz-appearance: textfield;
+  }
+
+  select {
+    background: #151515;
+    border: 1px solid #404040;
+    border-radius: 12px;
+    padding: 0 12px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    color: #D4D4D4;
+    outline: none;
+    width: 100%;
+    flex: 1;
+    font-weight: 500;
+    font-size: 14px;
+
+    &.center {
+      text-align: center;
+      justify-content: center;
+    }
+
+    option {
+      background: #151515;
+      color: #D4D4D4;
+      font-weight: 500;
+      font-size: 14px;
+    }
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-image: url("data:image/svg+xml,%3Csvg fill='%23737373' height='10' viewBox='0 0 24 24' width='10' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 10px;
+  }
+
+  .time-picker-wrapper {
+    display: flex;
+    gap: 8px;
+
+    select {
+      max-width: 70px;
+    }
+  }
+}
