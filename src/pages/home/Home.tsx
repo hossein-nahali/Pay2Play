@@ -80,6 +80,7 @@ export default function Home() {
                         <p>قیمت کل: <span>{state.finalPrice.toLocaleString('fa-IR')}</span></p> : undefined}
                     {state.pricePerPeople && state.pricePerPeople !== state.finalPrice ?
                         <p>سهم هر نفر: <span>{state.pricePerPeople.toLocaleString('fa-IR')}</span></p> : undefined}
+                    <button>محاسبه قیمت</button>
                 </div>
             </form>
         </section>

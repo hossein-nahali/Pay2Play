@@ -7,7 +7,7 @@ export default class RequestHandler {
         // if (UserRepository.isLogin())
         //     axios.defaults.headers.common['auth-token'] = UserRepository.token();
 
-        axios.defaults.baseURL = process.env.REACT_APP_API_BASE_URL as string
+        // axios.defaults.baseURL = process.env.REACT_APP_API_BASE_URL as string
         // axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
     }
 
@@ -49,7 +49,7 @@ export default class RequestHandler {
         }
     }
 
-    private static errorHandler(error: AxiosError | any): ErrorModel {
+    private static errorHandler(error: AxiosError | any) {
         // // Check auth
         // if (error.response && error.response.hasOwnProperty('status') && error.response.status === 401) {
         //     if (UserRepository.isLogin()) {

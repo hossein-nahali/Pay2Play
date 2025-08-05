@@ -15,6 +15,10 @@
       flex-direction: column;
       gap: 16px;
       margin-bottom: auto;
+
+      &:last-child {
+        margin-top: auto;
+      }
     }
 
     > div {
