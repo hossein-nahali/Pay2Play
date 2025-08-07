@@ -1,69 +1,53 @@
-# React + TypeScript + Vite
+# پی2پلی (Pay2Play)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ابزاری ساده برای محاسبه هزینه گیم‌نت
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## معرفی پروژه
+پروژه **پی2پلی** یک ابزار تحت وب برای محاسبه سریع و آسان هزینه نهایی استفاده از خدمات گیم‌نت است. این ابزار به شما کمک می‌کند تا با وارد کردن مدت زمان بازی، نرخ تعرفه و تعداد نفرات، هزینه پایه را مشاهده کنید. همچنین می‌توانید آیتم‌های جانبی مانند خوراکی یا خدمات اضافه را نیز به هزینه نهایی اضافه کنید.
 
-## Expanding the ESLint configuration
+هدف این پروژه، تسهیل مدیریت مالی و شفاف‌سازی هزینه‌ها برای کاربران و مدیران گیم‌نت است.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## ویژگی‌ها
+- محاسبه خودکار هزینه بر اساس مدت زمان بازی و نرخ ساعتی
+- پشتیبانی از وارد کردن تعداد نفرات
+- امکان افزودن آیتم‌های جانبی (خوراکی، خدمات و ...)
+- رابط کاربری ساده و واکنش‌گرا
+- نمایش هزینه نهایی و هزینه هر نفر
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## نحوه استفاده
+1. نرخ ساعتی (تومان) را وارد کنید.
+2. ساعت و دقیقه شروع و پایان بازی را مشخص کنید.
+3. تعداد نفرات را وارد کنید (در صورت نیاز).
+4. در صورت وجود آیتم جانبی، آن‌ها را اضافه کنید.
+5. هزینه نهایی و هزینه هر نفر به صورت خودکار نمایش داده می‌شود.
+
+---
+
+## توسعه و اجرا
+این پروژه با استفاده از [React](https://react.dev/)، [TypeScript](https://www.typescriptlang.org/) و [Vite](https://vitejs.dev/) توسعه داده شده است.
+
+### اجرای پروژه
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## مشارکت و ارتباط
+- توسعه‌دهنده: حسین نهالی
+- [اینستاگرام](https://www.instagram.com/hosseinnahali/)
+- [تلگرام](https://t.me/nahali_dev/)
+- [واتساپ](https://wa.me/+989369079925/)
+- [حمایت مالی](https://reymit.ir/nahali)
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## لایسنس
+این پروژه صرفاً جهت استفاده شخصی و آموزشی ارائه شده است.
